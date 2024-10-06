@@ -19,7 +19,7 @@ CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     order_date DATE,
     supplier_id INT,
-    total_amount DECIMAL(10, 2),
+    total_amount DECIMAL(10, 2)
 );
 
 CREATE TABLE order_detail (
