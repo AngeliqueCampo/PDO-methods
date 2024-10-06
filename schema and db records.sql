@@ -20,7 +20,6 @@ CREATE TABLE orders (
     order_date DATE,
     supplier_id INT,
     total_amount DECIMAL(10, 2),
-    status VARCHAR(50)
 );
 
 CREATE TABLE order_detail (
