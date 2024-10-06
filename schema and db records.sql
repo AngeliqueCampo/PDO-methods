@@ -73,12 +73,12 @@ INSERT INTO supplier (supplier_id, supplier_name, address, contact_number) VALUE
 (5, 'AllerMed Supplies', '202 Allergy Ln, AllergyTown, AT 56789', '567-890-1234');
 
 
-INSERT INTO orders (order_id, order_date, supplier_id, total_amount, status) VALUES
-(1, '2024-09-01', 1, 120.00, 'Completed'), 
-(2, '2024-09-05', 2, 85.00, 'Pending'),    
-(3, '2024-09-10', 3, 150.00, 'Completed'), 
-(4, '2024-09-12', 4, 55.00, 'Shipped'),    
-(5, '2024-09-15', 5, 110.00, 'Pending');   
+INSERT INTO orders (order_id, order_date, supplier_id, total_amount) VALUES
+(1, '2024-09-01', 1, 120.00), 
+(2, '2024-09-05', 2, 85.00),    
+(3, '2024-09-10', 3, 150.00), 
+(4, '2024-09-12', 4, 55.00),    
+(5, '2024-09-15', 5, 110.00);   
 
 INSERT INTO order_detail (order_detail_id, order_id, product_id, quantity, price) VALUES
 (1, 1, 1, 30, 5.99), 
@@ -92,12 +92,12 @@ INSERT INTO order_detail (order_detail_id, order_id, product_id, quantity, price
 (9, 4, 6, 10, 15.50), 
 (10, 5, 5, 40, 7.99); 
 
-INSERT INTO sale (sale_id, sale_date, customer_id, total_amount, payment_method, status) VALUES
-(1, '2024-09-02', 1, 75.00, 'Credit Card', 'Completed'),   
-(2, '2024-09-06', 2, 55.00, 'Cash', 'Completed'),         
-(3, '2024-09-11', 3, 105.00, 'Debit Card', 'Pending'),     
-(4, '2024-09-13', 4, 62.00, 'Credit Card', 'Shipped'),     
-(5, '2024-09-16', 5, 88.00, 'PayPal', 'Completed');        
+INSERT INTO sale (sale_id, sale_date, customer_id, total_amount, payment_method) VALUES
+(1, '2024-09-02', 1, 75.00, 'Credit Card'),   
+(2, '2024-09-06', 2, 55.00, 'Cash'),         
+(3, '2024-09-11', 3, 105.00, 'Debit Card'),     
+(4, '2024-09-13', 4, 62.00, 'Credit Card'),     
+(5, '2024-09-16', 5, 88.00, 'PayPal');        
 
 INSERT INTO sale_detail (sale_detail_id, sale_id, product_id, quantity, price) VALUES
 (1, 1, 1, 10, 5.99),   
